@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,mEAAI;AAGZ,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;EACtB,eAAe,EAAE,IAAI;EACrB,UAAU,EAAE,IAAI;CACnB;;AAED,AAAA,iBAAiB,CAAC;EACd,MAAM,EAAE,OAAO;CAClB",
+    "sources": [
+        "Davxaridlar.scss"
+    ],
+    "names": [],
+    "file": "Davxaridlar.css"
+}

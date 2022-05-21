@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.hodim-page {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hodim-page .hodim-all-card {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  gap: 30px;
+  -webkit-box-shadow: 0px 1px 1px rgba(100, 116, 139, 0.06), 0px 1px 2px rgba(100, 116, 139, 0.1);
+          box-shadow: 0px 1px 1px rgba(100, 116, 139, 0.06), 0px 1px 2px rgba(100, 116, 139, 0.1);
+}
+
+.hodim-page .hodim-all-card .hodim-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  letter-spacing: 3px;
+  line-height: 24.98px;
+}
+
+.hodim-page .hodim-all-card .hodim-card {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.hodim-page .hodim-all-card .hodim-card .hodim-users {
+  width: 100%;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  gap: 20px;
+  -webkit-box-shadow: 0px 1px 1px rgba(100, 116, 139, 0.06), 0px 1px 2px rgba(100, 116, 139, 0.1);
+          box-shadow: 0px 1px 1px rgba(100, 116, 139, 0.06), 0px 1px 2px rgba(100, 116, 139, 0.1);
+}
+
+.hodim-page .hodim-all-card .hodim-card .hodim-users .img {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.hodim-page .hodim-all-card .hodim-card .hodim-users .img img {
+  width: 400px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 1px rgba(100, 116, 139, 0.06), 0px 1px 2px rgba(100, 116, 139, 0.1);
+          box-shadow: 0px 1px 1px rgba(100, 116, 139, 0.06), 0px 1px 2px rgba(100, 116, 139, 0.1);
+}
+
+.hodim-page .hodim-all-card .hodim-card .hodim-users .hodim-about {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.hodim-page .hodim-all-card .hodim-card .hodim-users .hodim-about .hodim-name {
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.hodim-page .hodim-all-card .hodim-card .hodim-users .hodim-about .hodim-lavozim {
+  width: 650px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #6b7280;
+}
+
+@media only screen and (max-width: 1279px) {
+  .hodim-lavozim {
+    width: 450px !important;
+  }
+  .hodim-contact {
+    width: 100% !important;
+    gap: 15px !important;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .hodim-users {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    height: auto !important;
+  }
+  .hodim-lavozim {
+    width: auto !important;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .hodim-title {
+    font-size: 20px !important;
+  }
+  .img img {
+    width: 200px !important;
+  }
+  .hodim-about .hodim-name {
+    font-size: 20px !important;
+  }
+  .hodim-about .hodim-lavozim {
+    font-size: 15px !important;
+  }
+  .hodim-about .hodim-contact {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .hodim-about .hodim-contact h4 {
+    font-size: 10px !important;
+    gap: 5px !important;
+  }
+  .hodim-about .hodim-contact h4 a {
+    font-size: 12px !important;
+  }
+  .hodim-about .hodim-contact h4 p {
+    font-size: 12px !important;
+  }
+}
+/*# sourceMappingURL=Hodimlar.css.map */

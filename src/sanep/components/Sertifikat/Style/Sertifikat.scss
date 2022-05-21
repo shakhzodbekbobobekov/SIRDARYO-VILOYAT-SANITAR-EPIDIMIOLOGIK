@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.sertifikat-page {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0;
+    .sertifikat-title {
+        font-size: 30px;
+        font-weight: 600;
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 20px;
+    }
+    .sertifikat-cards {
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        .sertifikat-file {
+            width: 350px;
+            height: auto;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            box-shadow: 0px 1px 1px rgba(100, 116, 139, 0.06), 0px 1px 2px rgba(100, 116, 139, 0.1);
+            border-radius: 4px;
+            padding: 30px;
+            .sertifikat-comment {
+                width: 100%;
+                height: auto;
+                text-align:center;
+                color: rgba(107, 114, 128, 1);
+                font-family: 'Open Sans', sans-serif;
+                font-size: 12px;
+            }
+        }
+        & .sertifikat-file:hover {
+            background-color: #295091;
+            .sertifikat-comment {
+                color: white;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .sertifikat-title {
+        font-size: 20px !important;
+    }
+}

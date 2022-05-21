@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.asosiy-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    .asosiy-post {
+        width: 90%;
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0px 1px 1px rgba(100, 116, 139, 0.06), 0px 1px 2px rgba(100, 116, 139, 0.1);
+
+        .asosiy-post-text {
+            width: 100%;
+            height: auto;
+            background-color: hsla(223, 63%, 33%, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 150px 0;
+            gap: 50px;
+
+            .asosiy-post-title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                font-size: 50px;
+                font-family: 'Open Sans', sans-serif;
+                color: white;
+                letter-spacing: 3px;
+            }
+
+            .asosiy-post-comment {
+                width: 40%;
+                text-align: center;
+                color: white;
+                letter-spacing: 3px;
+            }
+
+            a {
+                Button {
+                    width: 200px;
+                    height: 50px;
+                    background-color: white;
+                    color: #1f3c88;
+                }
+            }
+        }
+    }
+
+    #asosiy-post-1 {
+        background-image: url("../AsosiyImg/asosiyOne.jpg");
+    }
+
+    #asosiy-post-2 {
+        background-image: url("../AsosiyImg//asosiyTwo.jpg");
+    }
+
+    #asosiy-post-3 {
+        background-image: url("../AsosiyImg/asosiyThree.jpg");
+    }
+
+    .asosiy-news {
+        width: 90%;
+        height: auto;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        padding: 50px 0;
+
+        .news-post {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+            box-shadow: 0px 1px 1px rgba(100, 116, 139, 0.06), 0px 1px 2px rgba(100, 116, 139, 0.1);
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+
+            .news-title {
+                font-size: 25px;
+                font-family: 'Open Sans', sans-serif;
+                letter-spacing: 3px;
+                font-weight: 700;
+            }
+
+            .news-comment {
+                font-weight: bold;
+                font-family: 'Open Sans', sans-serif;
+                letter-spacing: 1px;
+            }
+
+            a {
+                color: #1f3c88;
+                font-family: 'Open Sans', sans-serif;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .news-post {
+        width: 400px !important;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .asosiy-post-title {
+        font-size: 30px !important;
+    }
+    .asosiy-post-comment {
+        font-size: 15px !important;
+        letter-spacing: normal !important;
+    }
+    .news-post {
+        width: 300px !important;
+        h1 {
+            font-size: 18px !important;
+            letter-spacing: normal !important;
+        }
+        p {
+            font-size: 14px !important;
+        }
+    }
+}
+@media only screen and (max-width: 700px) {
+    .asosiy-post-text {
+        gap: 20px !important;
+        padding: 50px 0 !important;
+        .asosiy-post-title {
+            font-size: 20px !important;
+        }
+    
+        .asosiy-post-comment {
+            font-size: 10px !important;
+            letter-spacing: normal !important;
+        }
+        a {
+            Button {
+                width: 100px !important;
+                height: 25px !important;
+                font-size: 10px !important;
+            }
+        }
+    }
+
+    .asosiy-news {
+        grid-template-columns: auto !important;
+        gap: 10px;
+        justify-content: center !important;
+        .news-post {
+            width: 100% !important;
+            img {
+                width: 100% !important;
+            }
+            h1 {
+                font-size: 18px !important;
+                letter-spacing: normal !important;
+            }
+    
+            p {
+                font-size: 14px !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .asosiy-post-text {
+        gap: 20px !important;
+        padding: 50px 0 !important;
+    
+        .asosiy-post-title {
+            font-size: 15px !important;
+            letter-spacing: 2px !important;
+        }
+    
+        .asosiy-post-comment {
+            font-size: 10px !important;
+            letter-spacing: normal !important;
+            width: 80% !important;
+        }
+    
+        a {
+            Button {
+                width: 100px !important;
+                height: 25px !important;
+                font-size: 10px !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.home-card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f4f1f1;
+    header {
+        width: 95%;
+        height: auto;
+        display: flex;
+        .header-logo-card {
+            width: 50%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 30px;
+            img {
+                width: 80px;
+                animation: logoAnim 5s infinite ;
+            }
+            .header-title{
+                width: 500px;
+                font-size: 15px;
+                font-family: 'Roboto', sans-serif;
+                line-height: 24.98px;
+                color: rgba(17, 24, 39, 1);
+            }
+        }
+        .header-contact-card{
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 30px;
+            .header-contacts{
+                width: auto;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 5px;
+                    color: rgba(17, 24, 39, 1);
+                    font-family: 'Open Sans', sans-serif;
+                    .LocalPhoneRoundedIcon {
+                        color: #1f3c88;
+                        font-weight: bold;
+                        font-size: 30px;
+                    }
+                }
+            }
+            form {
+                position: relative;
+                width: 230px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                background-color: white;
+                border-radius: 8px;
+                input {
+                    position: absolute;
+                    width: 80%;
+                    height: 100%;
+                    z-index: 1;
+                    left: 5px;
+                    padding: 0 5px;
+                    font-size: 15px;
+                    border: none;
+                    outline: none;
+                    background: none;
+                }
+                .SearchOutlined {
+                    position: absolute;
+                    z-index: 2;
+                    color: rgb(76, 82, 94);
+                    right: 8px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@keyframes logoAnim {
+    0% {
+        transform: rotateY(0deg);
+    }
+    25% {
+        transform: rotateY(90deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    75% {
+        transform: rotateY(270deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+
+@media only screen and (max-width: 990px) {
+    .header-logo-card {
+        padding: 20px 0 !important;
+        img {
+            width: 70px !important;
+        }
+        .header-title {
+            font-size: 12px !important;
+            line-height: 18px !important;
+        }
+    }
+    a {
+        font-size: 10px !important;
+        .LocalPhoneRoundedIcon {
+            font-size: 20px !important;
+        }
+    }
+    form {
+        height: 30px !important;
+        font-size: 12px !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .header-contact-card {
+        flex-direction: column !important;
+        gap: 10px !important;
+        justify-content: center !important;
+        align-items: flex-end !important;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    header{
+        flex-direction: column !important;
+        .header-logo-card {
+            width: 100% !important;
+            img {
+                width: 40px !important;
+            }
+            .header-title {
+                font-size: 10px !important;
+                text-align: center !important;
+            }
+        }
+        .header-contact-card {
+            width: 100% !important;
+            justify-content: center !important;
+            align-items: center !important;
+            flex-direction: row !important;
+            .header-contacts {
+                display: none !important;
+            }
+            form {
+                width: 70% !important;
+                margin-bottom: 10px;
+                input {
+                    width: 85% !important;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    header {
+        width: 100%;
+    }
+}

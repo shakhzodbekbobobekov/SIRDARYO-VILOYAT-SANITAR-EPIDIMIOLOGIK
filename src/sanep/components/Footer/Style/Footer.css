@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer__tel {
+  color: aliceblue;
+}
+
+.footer__tel:hover {
+  color: #aab7d7;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #1f3c88;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer-cards {
+  width: 90%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0;
+}
+
+footer .footer-cards .footer-title {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+footer .footer-cards .footer-title img {
+  width: 80px;
+}
+
+footer .footer-cards .footer-title .sanepid-manzil {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: white;
+}
+
+footer .footer-cards .footer-hamkor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+footer .footer-cards .footer-hamkor .footer-hamkor-title {
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+footer .footer-cards .footer-hamkor ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+footer .footer-cards .footer-hamkor ul a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: white;
+}
+
+footer .footer-cards .footer-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+footer .footer-cards .footer-contacts .footer-contacts-title {
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+footer .footer-cards .footer-contacts .footer-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer .footer-cards .footer-contacts .footer-phone .icon {
+  color: white;
+}
+
+footer .footer-cards .footer-contacts .footer-contacts-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+footer .footer-cards .footer-contacts .footer-contacts-icons .icon {
+  color: white;
+}
+
+@media only screen and (max-width: 880px) {
+  .footer-cards {
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+  }
+  .footer-hamkor {
+    gap: 10px !important;
+  }
+  .footer-hamkor .footer-hamkor-title {
+    font-size: 20px !important;
+  }
+  .footer-contacts {
+    gap: 10px !important;
+  }
+  .footer-contacts .footer-contacts-title {
+    font-size: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .footer-cards {
+    -ms-grid-columns: auto !important;
+        grid-template-columns: auto !important;
+    gap: 30px !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .footer-cards img {
+    width: 50px !important;
+  }
+}
+/*# sourceMappingURL=Footer.css.map */

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.covid-page {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .covid-card {
+        width: 80%;
+        padding: 20px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        img {
+            width: 100%;
+        }
+        p {
+            font-family: 'Open Sans', sans-serif;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    p {
+        font-size: 12px !important;
+    }
+}

@@ -1,0 +1,27 @@
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px;
+    gap: 10px;
+
+    &__input {
+        padding: 5px 10px 5px 5px;
+        outline: none;
+        font-size: 18px;
+    }
+    
+    &__btn {
+        background-color: #1976D2;
+        color: aliceblue !important;
+        cursor: pointer !important;
+        font-family: sans-serif;
+        border-radius: 5px;
+        padding: 8px 50px 8px 50px !important;
+    }
+}
+
+.wrapper {
+    border:  2px solid #4e4e4e;
+    margin: 100px;
+}

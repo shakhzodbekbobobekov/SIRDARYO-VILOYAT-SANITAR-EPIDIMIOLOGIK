@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.hamkortash-page {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hamkortash-page .hamkortash-cards {
+  width: 100%;
+  height: auto;
+  background-color: #295091;
+  overflow: hidden;
+}
+
+.hamkortash-page .hamkortash-cards figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  -webkit-animation: 20s slider infinite;
+          animation: 20s slider infinite;
+}
+
+.hamkortash-page .hamkortash-cards figure .link {
+  width: 600px;
+  margin: 0 calc((20% - 600px) / 2);
+  float: left;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+.hamkortash-page .hamkortash-cards figure .link img {
+  height: 60px;
+}
+
+@-webkit-keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  65% {
+    left: -200%;
+  }
+  70% {
+    left: -300%;
+  }
+  85% {
+    left: -300%;
+  }
+  90% {
+    left: -400%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  65% {
+    left: -200%;
+  }
+  70% {
+    left: -300%;
+  }
+  85% {
+    left: -300%;
+  }
+  90% {
+    left: -400%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .link img {
+    height: 40px !important;
+  }
+}
+/*# sourceMappingURL=Hamkortash.css.map */

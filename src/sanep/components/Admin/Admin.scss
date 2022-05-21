@@ -1,0 +1,277 @@
+.inner {
+    margin-right: auto;
+    display: flex;
+    width: 800px;
+    
+        &__form {
+            position: relative;
+        }
+    
+        &__input {
+            width: 250px;
+            font-size: 16px;
+            outline: none;
+            padding: 10px;
+            border-radius: 3px;
+            border: 1px solid rgb(153, 153, 153);
+        }
+}
+.card {
+    border: 1px solid rgba(109, 119, 109, 0.4);
+    height: 500px;
+    padding: 20px;
+    overflow: auto;
+}
+.btn {
+    margin-bottom: 10px !important;
+    width: 200px;
+    margin: 0 auto;
+    }
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__card {
+    width: 500px;
+    padding: 50px;
+    height: 100%;
+}
+
+.post-id {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.post-sarlavha {
+    width: 300px;
+    margin-bottom: 20px;
+}
+.textarea {
+    width: 300px !important;
+}
+.input__file {
+    position: absolute;
+    padding: 40px 0 45px 10px;
+    font-size: 18px;
+    width: 250px;
+    margin-left: 30px;
+    border-radius: 3px;
+    border: 1px solid rgb(153, 153, 153);
+}
+.yozish {
+    font-family: sans-serif;
+    background-color: #1976D2;
+    color: #ffffff;
+    border: 1px solid #1976D2;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+    &:hover {
+        background-color: #3a91e7;
+    }
+    &:active {
+        background-color: #2c87e1;
+    }
+}
+.ochirish {
+    font-family: sans-serif;
+    background-color: transparent;
+    border: 1px solid #E49090;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+    color: #D84E4E;
+    font-size: 14px;
+    &:hover {
+        background-color: #ffecec;
+    }
+    &:active {
+        background-color: #e1a8a8;
+        color: #ffffff;
+    }
+}
+.post__ochirish-form {
+    display: flex;
+    align-items: center;
+}
+
+.submit__id {
+    margin-left: 10px !important;
+}
+
+.card__ul {
+    width: 450px;
+}
+
+.card__ul li {
+    display: flex;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding: 10px;
+    min-height: 100px;
+    color: #000;
+    transition: 0.4s linear all;
+}
+
+.card__ul li:hover {
+    transform: scale(0.9);
+}
+
+.user-img {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+.user-about {
+    margin-left: 15px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.user-about__date {
+    position: absolute;
+    right:  0;
+    bottom: -10%;
+    font-size: 14px;
+}
+
+.inner__form__context {
+    display: flex;
+    position: relative;
+}
+
+.form__section {
+    margin-left: 15px;
+}
+
+.addPending {
+    padding: 15px;
+}
+
+.form-inputs {
+    padding: 14px;
+}
+
+.placeholder {
+    width: 100%;
+}
+
+.form-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.form-data__textarea {
+    width: 65%;
+}
+
+.form-data__textarea input {
+    width: 100%;
+}
+
+.form-data__data {
+    width: 35%;
+}
+
+.form-data__data input {
+    width: 100%;
+}
+
+.gruop-btn {
+    display: flex;
+    position: absolute;
+    right: -55%;
+    bottom: 0%;
+}
+
+.inerbtn {
+    padding: 10px 20px !important;
+    border-radius: 20px !important;
+    background-color: #2c87e1 !important;
+    margin-left: 10px !important;
+}
+
+.form__img-box {
+    position: relative;
+    width: 300px !important;
+    height: 300px !important;
+}
+
+.form__img__span {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+// .form-data__textarea input {
+//     width: 100%;
+// }
+
+
+// @media only screen and (max-width: 755px) {
+//     .inerbtn {
+//         width: 220px;
+//     }
+//     .btn {
+//         font-size: 12px !important;
+//     }
+// }
+// @media only screen and (max-width: 740px) {
+    
+//     .btn {
+//         font-size: 13px !important;
+//         width: 120px !important;
+//         padding: 5px !important;
+//     }
+// }
+// @media only screen and (max-width: 460px) {
+//     .inner {
+
+//         &__input {
+//             font-size: 14px;
+//         }
+        
+//         .input__file {
+//             width: 200px;
+//         }
+
+//         .inerbtn {
+//             width: 100%;
+//         }
+        
+//     }
+// }
+// @media only screen and (max-width: 395px) {
+//     .inner {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         margin-bottom: 280px;
+//     }
+//     .form__card {
+//         margin-left: 10px;
+//     }
+
+//     .inner__form {
+//         display: flex;
+//         justify-content: center;
+//     }
+//     .card {
+//         display: flex;
+//         justify-content: center;
+//         margin: 0 auto;
+//         width: 200px;
+//     }
+//     .inner__input:nth-child(1) {
+//         margin-top: 20px;
+//     }
+//     .inerbtn {
+//         width: 200px !important;
+//         display: block !important;
+//     }
+// }

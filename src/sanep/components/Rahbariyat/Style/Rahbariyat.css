@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.rahbariyat-page {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.rahbariyat-page .rahbariyat-all-card2 {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  gap: 30px;
+  -webkit-box-shadow: 0px 1px 1px rgba(100, 116, 139, 0.06), 0px 1px 2px rgba(100, 116, 139, 0.1);
+          box-shadow: 0px 1px 1px rgba(100, 116, 139, 0.06), 0px 1px 2px rgba(100, 116, 139, 0.1);
+}
+
+.rahbariyat-page .rahbariyat-all-card {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  gap: 30px;
+  -webkit-box-shadow: 0px 1px 1px rgba(100, 116, 139, 0.06), 0px 1px 2px rgba(100, 116, 139, 0.1);
+          box-shadow: 0px 1px 1px rgba(100, 116, 139, 0.06), 0px 1px 2px rgba(100, 116, 139, 0.1);
+}
+
+.rahbariyat-page .rahbariyat-all-card .rahbariyat-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  letter-spacing: 3px;
+  line-height: 24.98px;
+}
+
+.rahbariyat-page .rahbariyat-all-card .rahbariyat-card {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.rahbariyat-page .rahbariyat-all-card .rahbariyat-card .rahbariyat-users {
+  width: 100%;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  gap: 20px;
+  -webkit-box-shadow: 0px 1px 1px rgba(100, 116, 139, 0.06), 0px 1px 2px rgba(100, 116, 139, 0.1);
+          box-shadow: 0px 1px 1px rgba(100, 116, 139, 0.06), 0px 1px 2px rgba(100, 116, 139, 0.1);
+}
+
+.rahbariyat-page .rahbariyat-all-card .rahbariyat-card .rahbariyat-users .img {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.rahbariyat-page .rahbariyat-all-card .rahbariyat-card .rahbariyat-users .img img {
+  width: 400px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 1px rgba(100, 116, 139, 0.06), 0px 1px 2px rgba(100, 116, 139, 0.1);
+          box-shadow: 0px 1px 1px rgba(100, 116, 139, 0.06), 0px 1px 2px rgba(100, 116, 139, 0.1);
+}
+
+.rahbariyat-page .rahbariyat-all-card .rahbariyat-card .rahbariyat-users .rahbariyat-about {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.rahbariyat-page .rahbariyat-all-card .rahbariyat-card .rahbariyat-users .rahbariyat-about .rahbar-name {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.rahbariyat-page .rahbariyat-all-card .rahbariyat-card .rahbariyat-users .rahbariyat-about .rahbar-lavozim {
+  width: 650px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #6b7280;
+}
+
+.rahbariyat-page .rahbariyat-all-card .rahbariyat-card .rahbariyat-users .rahbariyat-about .rahbar-qabul {
+  font-family: 'Open Sans', sans-serif;
+  color: #6b7280;
+}
+
+.rahbariyat-page .rahbariyat-all-card .rahbariyat-card .rahbariyat-users .rahbariyat-about .rahbar-qabul span {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin-left: 15px;
+  letter-spacing: 1px;
+}
+
+.rahbariyat-page .rahbariyat-all-card .rahbariyat-card .rahbariyat-users .rahbariyat-about .line {
+  width: 200px;
+  height: 2px;
+  background-color: #6b7280;
+}
+
+.rahbariyat-page .rahbariyat-all-card .rahbariyat-card .rahbariyat-users .rahbariyat-about .rahbar-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.rahbariyat-page .rahbariyat-all-card .rahbariyat-card .rahbariyat-users .rahbariyat-about .rahbar-contact h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  font-family: 'Open Sans', sans-serif;
+  color: #6b7280;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.rahbariyat-page .rahbariyat-all-card .rahbariyat-card .rahbariyat-users .rahbariyat-about .rahbar-contact h4 a {
+  font-size: 16px;
+  color: #6b7280;
+}
+
+.rahbariyat-page .rahbariyat-all-card .rahbariyat-card .rahbariyat-users .rahbariyat-about .rahbar-contact h4 p {
+  font-size: 16px;
+  color: #6b7280;
+}
+
+@media only screen and (max-width: 1279px) {
+  .rahbar-lavozim {
+    width: 450px !important;
+  }
+  .rahbar-contact {
+    width: 100% !important;
+    gap: 15px !important;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .rahbariyat-users {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    height: auto !important;
+  }
+  .rahbar-lavozim {
+    width: auto !important;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .rahbariyat-title {
+    font-size: 20px !important;
+  }
+  .img img {
+    width: 200px !important;
+  }
+  .rahbariyat-about .rahbar-name {
+    font-size: 20px !important;
+  }
+  .rahbariyat-about .rahbar-lavozim {
+    font-size: 15px !important;
+  }
+  .rahbariyat-about .rahbar-contact {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .rahbariyat-about .rahbar-contact h4 {
+    font-size: 10px !important;
+    gap: 5px !important;
+  }
+  .rahbariyat-about .rahbar-contact h4 a {
+    font-size: 12px !important;
+  }
+  .rahbariyat-about .rahbar-contact h4 p {
+    font-size: 12px !important;
+  }
+}
+/*# sourceMappingURL=Rahbariyat.css.map */

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.umumiymal-page {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .ummal-posts {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        background-color: white;
+        padding: 30px 60px;
+        box-shadow: 0px 1px 1px rgba(100, 116, 139, 0.06), 0px 1px 2px rgba(100, 116, 139, 0.1);
+        .ummal-title {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 25px;
+            letter-spacing: 2px;
+            line-height: 24.98px;
+        }
+        .ummal-text {
+            text-indent: 50px;
+            text-align: justify;
+            line-height: 24.98px;
+            font-size: 17px;
+            width: 90%;
+            height: auto;
+        }
+        img {
+            width: 600px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .ummal-posts {
+        .ummal-title {
+            font-size: 20px !important;
+        }
+        img {
+            width: 80% !important;
+        }
+        .ummal-text {
+            font-size: 14px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .ummal-posts {
+        width: 100% !important;
+        padding: 30px 10px !important;
+        .ummal-title {
+            font-size: 15px !important;
+        }
+        img {
+            width: 80% !important;
+        }
+        .ummal-text {
+            font-size: 10px !important;
+        }
+    }
+}

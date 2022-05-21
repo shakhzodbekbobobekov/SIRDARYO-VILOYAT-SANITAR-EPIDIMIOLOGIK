@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.home-card {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f4f1f1;
+}
+
+.home-card header {
+  width: 95%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home-card header .header-logo-card {
+  width: 50%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.home-card header .header-logo-card img {
+  width: 80px;
+  -webkit-animation: logoAnim 5s infinite;
+          animation: logoAnim 5s infinite;
+}
+
+.home-card header .header-logo-card .header-title {
+  width: 500px;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 24.98px;
+  color: #111827;
+}
+
+.home-card header .header-contact-card {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.home-card header .header-contact-card .header-contacts {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.home-card header .header-contact-card .header-contacts a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  color: #111827;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.home-card header .header-contact-card .header-contacts a .LocalPhoneRoundedIcon {
+  color: #1f3c88;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.home-card header .header-contact-card form {
+  position: relative;
+  width: 230px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.home-card header .header-contact-card form input {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  z-index: 1;
+  left: 5px;
+  padding: 0 5px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.home-card header .header-contact-card form .SearchOutlined {
+  position: absolute;
+  z-index: 2;
+  color: #4c525e;
+  right: 8px;
+  cursor: pointer;
+}
+
+@-webkit-keyframes logoAnim {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  25% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  50% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  75% {
+    -webkit-transform: rotateY(270deg);
+            transform: rotateY(270deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes logoAnim {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  25% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  50% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  75% {
+    -webkit-transform: rotateY(270deg);
+            transform: rotateY(270deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .header-logo-card {
+    padding: 20px 0 !important;
+  }
+  .header-logo-card img {
+    width: 70px !important;
+  }
+  .header-logo-card .header-title {
+    font-size: 12px !important;
+    line-height: 18px !important;
+  }
+  a {
+    font-size: 10px !important;
+  }
+  a .LocalPhoneRoundedIcon {
+    font-size: 20px !important;
+  }
+  form {
+    height: 30px !important;
+    font-size: 12px !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .header-contact-card {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    gap: 10px !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: end !important;
+        -ms-flex-align: end !important;
+            align-items: flex-end !important;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  header {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  header .header-logo-card {
+    width: 100% !important;
+  }
+  header .header-logo-card img {
+    width: 40px !important;
+  }
+  header .header-logo-card .header-title {
+    font-size: 10px !important;
+    text-align: center !important;
+  }
+  header .header-contact-card {
+    width: 100% !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  header .header-contact-card .header-contacts {
+    display: none !important;
+  }
+  header .header-contact-card form {
+    width: 70% !important;
+    margin-bottom: 10px;
+  }
+  header .header-contact-card form input {
+    width: 85% !important;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  header {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=Home.css.map */

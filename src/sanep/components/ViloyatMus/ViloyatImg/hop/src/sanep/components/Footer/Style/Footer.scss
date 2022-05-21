@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #1f3c88;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .footer-cards {
+        width: 90%;
+        height: auto;
+        display: grid;
+        grid-template-columns:  auto auto auto;
+        justify-content: space-between;
+        padding: 30px 0;
+        .footer-title{
+            width: auto;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            img {
+                width: 80px;
+            }
+            .sanepid-manzil {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 15px;
+                font-weight: 600;
+                letter-spacing: 2px;
+                color: white;
+            }
+        }
+        .footer-hamkor {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            .footer-hamkor-title {
+                font-size: 25px;
+                font-family: 'Open Sans', sans-serif;
+                color: white;
+            }
+            ul {
+                display: grid;
+                grid-template-columns: auto auto;
+                justify-content: space-between;
+                flex-direction: column;
+                gap: 10px;
+                a {
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 15px;
+                    color: white;
+                }
+            }
+        }
+        .footer-contacts {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            .footer-contacts-title {
+                font-size: 25px;
+                font-family: 'Open Sans', sans-serif;
+                color: white;
+            }
+            .footer-phone {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-family: 'Open Sans', sans-serif;
+                .icon {
+                    color: white;
+                }
+            }
+            .footer-contacts-icons {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                .icon {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .footer-cards {
+        flex-wrap: wrap !important;
+    }
+    .footer-hamkor {
+        gap: 10px !important;
+        .footer-hamkor-title {
+            font-size: 20px !important;
+        }
+    }
+    .footer-contacts {
+        gap: 10px !important;
+        .footer-contacts-title {
+        font-size: 20px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .footer-cards {
+        grid-template-columns: auto !important;
+        gap: 30px !important;
+        justify-content: center !important;
+        img {
+            width: 50px !important;
+        }
+    }
+}
