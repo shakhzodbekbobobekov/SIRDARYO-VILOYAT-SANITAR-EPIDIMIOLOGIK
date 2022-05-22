@@ -5,7 +5,7 @@ import { Button } from "@mui/material";
 import FetchAdmin from "./FetchAdmin";
 import axios from "axios";
 
-const url = 'https://510d-185-163-27-56.ngrok.io';
+const url = 'http://213.230.65.55:10';
 
 
 
@@ -89,7 +89,14 @@ useEffect(function(){
     
   }
   
-
+  const deleteFunc = (_id) => {
+    axios({
+      url: url + "/posts/delete/",
+      method: "delete",
+      data: {_id: document.getElementById('_id').value},
+      headers: {"Content-Type":"Application/JSON"}
+    }).then(console.log).catch(console.log)
+  }
 
   return (
     <>
@@ -194,7 +201,7 @@ useEffect(function(){
               >
                 Edit
               </Button>
-              <Button
+              <Button onClick={deleteFunc}
                 className="inerbtn"
                 size="medium"
                 variant="contained"
