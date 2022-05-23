@@ -12,16 +12,28 @@ const url = 'http://213.230.65.55:10';
 const Adminpanel = () => {
   const [posts, setPosts] = useState([]);
   // const [ openPost, setOpenPost ] = useState({_id: null, caption: null, description: null, imageId: null})
-
-useEffect(function(){
+ 
+ const updateAllData =  (function(){
   fetch(url+"/posts")
-  .then(res=>{return res.json()})
-  .then(data=>{setPosts(data)})
+    .then(res => {
+      return res.json();
+  })
+    .then(data => {
+      if (typeof data == "Array") {
+      return setPosts(data)  
+      } else {
+        window.alert(data.message)
+        window.location = data.redirect;
+      }
+      
+    })
   .catch(e=>{console.log(e)})
   .finally(()=>{
     console.log("posts", posts)
   })
-}, [])
+})
+
+  useEffect(updateAllData, [])
 
 // function bazaUpdate() {
 //   "updateTheme" = posts._id,
@@ -95,7 +107,9 @@ useEffect(function(){
       method: "delete",
       data: {_id: document.getElementById('_id').value},
       headers: {"Content-Type":"Application/JSON"}
-    }).then(console.log).catch(console.log)
+    }).then((data) => {
+      updateAllData()
+    })
   }
 
   return (
@@ -137,7 +151,9 @@ useEffect(function(){
                 <img id="postImage" width='300' height='300'  onError={ (e) => {
                       e.target.src = "https://www.pcfix.lt/wp-content/uploads/2019/10/default-user-image.png"
                     } } alt="" />
-                <input name='postImage' className="form__img__span" required type="file" />
+                <input onChange={(e) => {
+                 document.getElementById('postImage').src=(URL.createObjectURL(e.target.files[0]))
+                }} name='postImage' className="form__img__span" required type="file" accept="image/jpeg" />
                 {/* <span className="form__img__span">Rasm quyish</span> */}
               </div>
 
@@ -154,12 +170,6 @@ useEffect(function(){
                     type="text"
                     name="caption"
                     placeholder="Post sarlavhasini kiriting"
-                      // value={ openPost.caption }
-                      // onChange={ (e) => {
-                      //   console.log(e.target.value)
-                      //   return setOpenPost((o) => {
-                      //     // o.caption = e.target.value
-                      // })}}
                     autoComplete='off'
                   />
                 </div>
@@ -179,7 +189,6 @@ useEffect(function(){
                 rows="5"
                   placeholder="Post matnini kiriting"
                     name="description"
-                    /* defaultValue={openPost.description} */
               ></textarea>
             </div>
                </div>
