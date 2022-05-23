@@ -7,14 +7,45 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.yangiliklar-page {
-    // margin: 100px 100%;
-    .newLeftNavbar
-    {
-        width: 100%;
-        height: 70vh;
-        border: 1px solid black;
-    }
+.news-card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.news-card__item {
+    width: 30%;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.news-card__boxImg {
+    height: 300px;
+}
+
+.news-card__boxImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.context-text h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: rgb(104, 102, 102);
+}
+
+.context-text p {
+    color: rgb(170, 169, 169);
+}
+
+.context-text hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 0.5px solid #ccc;
 }
