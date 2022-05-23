@@ -26,103 +26,24 @@ function Yangiliklar() {
 console.log(posts)
   return (
       <div className='news-card'>
-          {/* { */}
-              {/* posts.map((post) => { */}
-          {/* return */ }
-                    <div className='news-card__item'>
+          {
+              posts.map((post) => {
+           return <div className='news-card__item'>
                       <div className='news-card__boxImg'>
-                          <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5YrQimjeNiD7SwJ0UUV1qUnTO4HPaP-M0GQ&usqp=CAU' alt="images" />
+                          <img src={post.imageId} alt="images" />
                       </div>
                       <div className="context-text">
-                          <h3>Lorem dolor sit bla bla</h3>
-                          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error neque voluptatibus quibusdam perspiciatis incidunt architecto a quia eveniet et, laudantium rem soluta quaerat beatae. Magnam impedit voluptate dolores hic voluptatibus. </p>
+                   <h3>{post.caption }</h3>
+                   <p> { post.description}</p>
                           <hr />
                             <div className='data'>
                                 <span>1.1210.54</span>
                             </div>
                       </div>
                     </div>
-              {/* }) */}
-          {/* } */ }
-          <div className='news-card__item'>
-                      <div  className='news-card__boxImg'>
-                          <img src='https://www.codegrepper.com/codeimages/javascript-set-image-src.png' alt="images" />
-                      </div>
-                      <div className="context-text">
-                          <h3>Lorem dolor sit bla bla</h3>
-                          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit lorem. Error neque voluptatibus quibusdam perspiciatis incidunt architecto a quia eveniet et, laudantium rem soluta quaerat beatae. Magnam impedit voluptate dolores hic voluptatibus. </p>
-                          <hr />
-                  <div className='data'>
-                      <span>1.1210.54</span>
-                          </div>
-                      </div>
-          </div>
-          {/*  */}
-          <div className='news-card__item'>
-                      <div  className='news-card__boxImg'>
-                          <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5YrQimjeNiD7SwJ0UUV1qUnTO4HPaP-M0GQ&usqp=CAU' alt="images" />
-                      </div>
-                      <div className="context-text">
-                          <h3>Lorem dolor sit bla bla</h3>
-                          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error neque voluptatibus quibusdam perspiciatis incidunt architecto a quia eveniet et, laudantium rem soluta quaerat beatae. Magnam impedit voluptate dolores hic voluptatibus. </p>
-                          <hr />
-                  <div className='data'>
-                      <span>1.1210.54</span>
-                  </div>
-                </div>
-          </div>
-           <div className='news-card__item'>
-                      <div  className='news-card__boxImg'>
-                          <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5YrQimjeNiD7SwJ0UUV1qUnTO4HPaP-M0GQ&usqp=CAU' alt="images" />
-                      </div>
-                      <div className="context-text">
-                          <h3>Lorem dolor sit bla bla</h3>
-                          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error neque voluptatibus quibusdam perspiciatis incidunt architecto a quia eveniet et, laudantium rem soluta quaerat beatae. Magnam impedit voluptate dolores hic voluptatibus. </p>
-                          <hr />
-                  <div className='data'>
-                      <span>1.1210.54</span>
-                  </div>
-                </div>
-          </div>
-           <div className='news-card__item'>
-                      <div  className='news-card__boxImg'>
-                          <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5YrQimjeNiD7SwJ0UUV1qUnTO4HPaP-M0GQ&usqp=CAU' alt="images" />
-                      </div>
-                      <div className="context-text">
-                          <h3>Lorem dolor sit bla bla</h3>
-                          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error neque voluptatibus quibusdam perspiciatis incidunt architecto a quia eveniet et, laudantium rem soluta quaerat beatae. Magnam impedit voluptate dolores hic voluptatibus. </p>
-                          <hr />
-                  <div className='data'>
-                      <span>1.1210.54</span>
-                  </div>
-                </div>
-          </div>
-           <div className='news-card__item'>
-                      <div  className='news-card__boxImg'>
-                          <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5YrQimjeNiD7SwJ0UUV1qUnTO4HPaP-M0GQ&usqp=CAU' alt="images" />
-                      </div>
-                      <div className="context-text">
-                          <h3>Lorem dolor sit bla bla</h3>
-                          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error neque voluptatibus quibusdam perspiciatis incidunt architecto a quia eveniet et, laudantium rem soluta quaerat beatae. Magnam impedit voluptate dolores hic voluptatibus. </p>
-                          <hr />
-                  <div className='data'>
-                      <span>1.1210.54</span>
-                  </div>
-                </div>
-          </div>
-           <div className='news-card__item'>
-                      <div  className='news-card__boxImg'>
-                          <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5YrQimjeNiD7SwJ0UUV1qUnTO4HPaP-M0GQ&usqp=CAU' alt="images" />
-                      </div>
-                      <div className="context-text">
-                          <h3>Lorem dolor sit bla bla</h3>
-                          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error neque voluptatibus quibusdam perspiciatis incidunt architecto a quia eveniet et, laudantium rem soluta quaerat beatae. Magnam impedit voluptate dolores hic voluptatibus. </p>
-                          <hr />
-                  <div className='data'>
-                      <span>1.1210.54</span>
-                  </div>
-                </div>
-          </div>
+            })
+          } 
+         
     </div>
   )
 }
